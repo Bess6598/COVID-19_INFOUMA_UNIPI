@@ -52,26 +52,26 @@ $(document).ready( function() {
     parte = window.location.search.substring(1).split("=")[1];
   }
 
-  switch(parte) {
-  case "nord_est":
-    $("#titolo").text("Dati Covid-19 relativi al nord est dell'Italia");
-    break;
-  case "nord_ovest":
-    $("#titolo").text("Dati Covid-19 relativi al nord ovest dell'Italia");
-    break;
-  case "sud":
-    $("#titolo").text("Dati Covid-19 relativi al sud dell'Italia");
-    break;
-  case "centro":
-    $("#titolo").text("Dati Covid-19 relativi al centro dell'Italia");
-    break;
-  case "isole":
-    $("#titolo").text("Dati Covid-19 relativi alle isole Italiane");
-    break;
-  default:
-    $("#titolo").text("Errore, ci scusiamo per il disagio.");
-    //TODO --> pagina d'errore migliore
-    return;
-  }
+  var title = new Vue({
+    el: '.container',
+    data: {
+      message: parte.replace("_", " "),
+      regione: [{pippo: [1, 2, 3, 4]}, 2, 3, 4]
+    },
+    mounted: function() {
+
+    },
+    created: function() {
+
+    },
+    methods: {
+      /*save: function() {
+          alert('save');
+          this.message = 'CIAO';
+      },
+      close: function() {
+      }*/
+    }
+  });
   parse(parte);
 });

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Covid-19</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Bootstrap & Tempus Dominus -->
+    <link rel="stylesheet" href="https://tempusdominus.github.io/bootstrap-4/theme/css/tempusdominus-bootstrap-4.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg==" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./lib.js"> </script>
+    <script type="text/javascript" src="./confronti.js"> </script>
+    <style>
+      body { background-color: white; width: 100%; height: 100%; }
+      h1 { margin-top: 2%; margin-bottom: 2%; }
+      .input-group-text { border-radius: 5%; }
+      .form { border: 1px solid #dadada; padding: 5px; margin: 5px; }
+      #rigenera { margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a href="" class="navbar-brand">Dati Covid-19</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Nazionali</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./regioni.html">Regioni</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./confronti.html">Confronti<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <h1 id="titolo">Dati Covid-19</h1>
+    </div>
+
+    <div class="row form" id="form1">
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="nuovi_positivi">
+        <label class="custom-control-label" for="nuovi_positivi">Nuovi positivi</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="tamponi">
+        <label class="custom-control-label" for="tamponi">Tamponi eseguiti</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="totale_positivi">
+        <label class="custom-control-label" for="totale_positivi">Attualmente positivi</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="ricoverati_con_sintomi">
+        <label class="custom-control-label" for="ricoverati_con_sintomi">Ricoverati</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="terapia_intensiva">
+        <label class="custom-control-label" for="terapia_intensiva">Terapia intensiva</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="isolamento_domiciliare">
+        <label class="custom-control-label" for="isolamento_domiciliare">Isolamento domiciliare</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="deceduti">
+        <label class="custom-control-label" for="deceduti">Deceduti</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="dimessi_guariti">
+        <label class="custom-control-label" for="dimessi_guariti">Pazienti dimessi</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10" id="div_grafico">
+        <canvas id="grafico"></canvas>
+      </div>
+      <div class="col-md-auto form" id="form2">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="abruzzo">
+          <label class="custom-control-label" for="abruzzo">Abruzzo</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="basilicata">
+          <label class="custom-control-label" for="basilicata">Basilicata</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="calabria">
+          <label class="custom-control-label" for="calabria">Calabria</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="campania">
+          <label class="custom-control-label" for="campania">Campania</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="emilia-romagna">
+          <label class="custom-control-label" for="emilia-romagna">Emilia-Romagna</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="friuli_venezia_giulia">
+          <label class="custom-control-label" for="friuli_venezia_giulia">Friuli Venezia Giulia</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="lazio">
+          <label class="custom-control-label" for="lazio">Lazio</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="liguria">
+          <label class="custom-control-label" for="liguria">Liguria</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="lombardia">
+          <label class="custom-control-label" for="lombardia">Lombardia</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="marche">
+          <label class="custom-control-label" for="marche">Marche</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="molise">
+          <label class="custom-control-label" for="molise">Molise</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="piemonte">
+          <label class="custom-control-label" for="piemonte">Piemonte</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="puglia">
+          <label class="custom-control-label" for="puglia">Puglia</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="sardegna">
+          <label class="custom-control-label" for="sardegna">Sardegna</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="sicilia">
+          <label class="custom-control-label" for="sicilia">Sicilia</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="toscana">
+          <label class="custom-control-label" for="toscana">Toscana</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="pa_bolzano">
+          <label class="custom-control-label" for="pa_bolzano">P.A. Bolzano</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="pa_trento">
+          <label class="custom-control-label" for="pa_trento">P.A. Trento</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="umbria">
+          <label class="custom-control-label" for="umbria">Umbria</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="valle_daosta">
+          <label class="custom-control-label" for="valle_daosta">Valle d'Aosta</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="veneto">
+          <label class="custom-control-label" for="veneto">Veneto</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <button id="rigenera" type="button" class="btn btn-dark btn-lg btn-block">Rigenera il grafico</button>
+    </div>
+
+    </div>
+  </body>
+</html>

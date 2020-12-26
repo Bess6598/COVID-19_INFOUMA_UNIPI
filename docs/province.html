@@ -26,7 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://tempusdominus.github.io/bootstrap-4/theme/css/tempusdominus-bootstrap-4.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg==" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script type="text/javascript" src="./lib.js"> </script>
     <script type="text/javascript" src="./province.js"> </script>
     <style>
@@ -67,12 +67,18 @@
   </nav>
 
   <div class="container">
-    <div class="row">
-      <h1 id="titolo"></h1>
-    </div>
+    <h1 id="title" v-if="message == 'isole'">Dati covid-19 relativi alle {{message}} italiane</h1>
+    <h1 id="title" v-if="message != 'isole'">Dati covid-19 relativi al {{message}} Italia</h1>
 
-    <div class="row">
+   <div v-for="regione in regioni" :key="item">
+     <div class="row"><h3>{{item}}</h3></div>
+     <div class="row" v-for="graph in graphs">
+          <h4> </h4>
+          <div> </div>
      </div>
+  </div>
+
+     </ul>
 
     </div>
   </body>
