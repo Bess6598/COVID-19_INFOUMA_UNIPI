@@ -26,7 +26,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://tempusdominus.github.io/bootstrap-4/theme/css/tempusdominus-bootstrap-4.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg==" crossorigin="anonymous"></script>
-
+    <!--Sweet Alert-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+    <!--VUE-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script type="text/javascript" src="./lib.js"> </script>
     <script type="text/javascript" src="./regioni.js"> </script>
     <style>
@@ -152,6 +155,15 @@
             <canvas id="dimessi"></canvas>
           </div>
        </div>
+
+       <div class="row">
+         <h3>Note</h3>
+       </div>
+        <ul id="note_autogenerate" class="list-group list-group-flush">
+         <li v-for="el in note_regioni" class="list-group-item">
+           {{el.title}} &#x2192; {{el.value}}
+         </li>
+       </ul>
 
     </div>
   </body>

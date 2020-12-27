@@ -53,7 +53,6 @@ $(document).ready( function() {
     $("#form1 input:checkbox").each( (i, item) => { if( $(item).prop( 'checked') ) { data.push( $(item).attr('id')) } });
     $("#form2 input:checkbox").each((i, item) => { if( $(item).prop('checked') ) { regioni.push($(item).attr('id')) } });
     var string = "./confronti.html?" + $.param({data: data}, true) + "&" +  $.param({regioni: regioni}, true);
-    alert(string);
     window.location.href = string;
   });
 });
