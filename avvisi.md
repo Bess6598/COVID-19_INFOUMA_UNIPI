@@ -5,6 +5,51 @@
 # Dati COVID-19 Italia
 
 ## Avvisi
+<b>26/12/2020</b><br>
+La regione Emilia Romagna segnala che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19. La Regione Veneto segnala che nei valori riportati per le terapie intensive si è verificato un disallineamento temporale del flusso informativo pertanto per convenzione è stato riportato n. 13 dimissioni da TI invece delle 10 effettive che includono anche i negativizzati. La P.A.Bolzano  segnala che i dai verranno aggiornati domani.
+
+<b>25/12/2020</b><br>
+La Regione Veneto segnala che nei valori riportati per le terapie intensive si è verificato un disallineamento temporale del flusso informativo pertanto per convenzione è stato riportato n. 16 dimissioni da TI invece delle 19 effettive che includono anche i negativizzati.
+
+<b>24/12/2020</b><br>
+La Regione Campania non ha al momento l'indicazione sugli ingressi in TI del giorno. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19. La Regione Valle D'Aosta comunica che ieri i pazienti ricoverati in TI erano 5 e non 4.
+
+<b>23/12/2020</b><br>
+La Regione Campania comunica di non avere a disposizione al momento i dati sugli ingressi giornalieri nelle T.I.. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19. La Regione Lazio comunica che per un errore di inserimento il numero totale di tamponi di ieri 22/12/2020 era 2590884 per un incremento di 12982 tamponi. La Regione Friuli Venezia Giulia comunica che il totale dei casi positivi è stato rivisto sulla base delle indicazioni ministeriali.
+
+<b>22/12/2020</b><br>
+La Regione Campania comunica di non potere comunicare al momento i dati giornalieri sugli ingressi in T.I.. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>21/12/2020</b><br>
+La Regione Abruzzo comunica che in seguito a verifica sui dati comunicati è stato sottratto 1 caso dei giorni precedenti in quanto duplicato. La Regione Campania comunica di non poter fornire ad oggi i dati sugli ingressi delle T.I..  La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>20/12/2020</b><br>
+La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 2 casi in quanto giudicati non casi COVID-19. La Regione Campania al momento non ha a disposizione i dati quotidiani sugli ingressi in T.I..
+
+<b>19/12/2020</b><br>
+La Regione Abruzzo comunica che sono stati sottratti 2 casi dei giorni precedenti in quanto duplicati. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19. La Regione Campania al momento non ha a disposizione i dati quotidiani sugli ingressi in T.I..
+
+<b>18/12/2020</b><br>
+La Regione Basilicata segnala che il dato delle persone testate è stato ricalcolato e verificato con la piattaforma regionale covid-19.  La Regione Emilia Romagna segnala che a seguito di una verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19. La Regione FVG segnala che per problemi tecnici i dati comunicati oggi sono parziali, i dati mancanti saranno riportati nelle comunicazioni successive. La Regione Piemonte segnala che : - il dato delle persone testate e dei tamponi processati con test molecolare è stato ricalcolato sulla base delle indicazioni ministeriali.  - il totale dei casi positivi è stato ricalcolato sulla base della definizione di caso come da circolare ministeriale.
+
+<b>17/12/2020</b><br>
+La Regione Abruzzo comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi positivi degli ultimi giorni poiché duplicati.  La Regione Campania comunica di non avere al momento la possibilità di trasmettere i dati quotidiani sugli ingressi in T.I.. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19.
+
+<b>16/12/2020</b><br>
+La Regione Abruzzo comunica che sono stati sottratti 2 casi positivi dei giorni precedenti in seguito a ricalcolo. La Regione Campania comunica di non avere al momento la possibilità di riportare i nuovi ingressi quotidiani in T.I.. La Regione Emilia Romagna comunica sono stati eliminati 2 casi dei giorni passati in quanto giudicati non casi COVID-19.
+
+<b>15/12/2020</b><br>
+La Regione Campania al momento non ha a disposizione i dati quotidiani sugli ingressi in T.I. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 5 casi in quanto giudicati non casi COVID-19
+
+<b>14/12/2020</b><br>
+La Regione Abruzzo comunica che in seguito a ricalcolo è stato eliminato 1 caso in quanto giudicato non caso COVID-19. La Regione Campania al momento non ha a disposizione i dati quotidiani sugli ingressi in T.I.. La Regione Emilia Romagna comunica che in seguito a ricalcolo sono stati eliminati 4 caso in quanto giudicati non casi COVID-19.
+
+<b>13/12/2020</b><br>
+La regione Emilia Romagna segnala che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19.
+
+<b>12/12/2020</b><br>
+La regione Emilia Romagna segnala che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19.
+
 <b>11/12/2020</b><br>
 La Regione Calabria comunica che il numero totale di tamponi del 10/12/2020 era 390.443. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19. La Regione Campania comunica di non potere al momento riportare i dati quotidiani sugli ingressi in T.I..
 
