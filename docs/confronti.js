@@ -52,18 +52,37 @@ $(document).ready( function() {
     var regioni = [];
     $("#form1 input:checkbox").each( (i, item) => { if( $(item).prop( 'checked') ) { data.push( $(item).attr('id')) } });
     $("#form2 input:checkbox").each((i, item) => { if( $(item).prop('checked') ) { regioni.push($(item).attr('id')) } });
-    var string = "./confronti.html?" + $.param({data: data}, true) + "&" +  $.param({regioni: regioni}, true);
-    window.location.href = string;
+    if(data.length + regioni.length > 10) {
+      const swalWithBootstrapButtons = Swal.mixin({
+          customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+          },
+          buttonsStyling: false
+        })
+        swalWithBootstrapButtons.fire({
+          title: 'Sicuro di voler proseguire?',
+          text: "È fortemente sconsigliato selezionare più di 10 elementi, per una migliore leggibilità del grafico.",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonText: 'Sì',
+          cancelButtonText: 'No!',
+          reverseButtons: true
+        }).then((result) => {
+          if (result.isConfirmed) {
+            var string = "./confronti.html?" + $.param({data: data}, true) + "&" +  $.param({regioni: regioni}, true);
+            window.location.href = string;
+          } else if (
+            result.dismiss === Swal.DismissReason.cancel
+          ) { return; }
+        })
+    }
+    else {
+      var string = "./confronti.html?" + $.param({data: data}, true) + "&" +  $.param({regioni: regioni}, true);
+      window.location.href = string;
+    }
   });
 });
-
-function datiCumulativi(array) {
-  var output = [];
-  for(var i = 1; i < array.length; i++) {
-    output.push(array[i] - array[i-1]);
-  }
-  return output;
-}
 
 function getQuerystringNameValue(name) {
   var regex = RegExp('[?&]' + name + '=([^&]*)');

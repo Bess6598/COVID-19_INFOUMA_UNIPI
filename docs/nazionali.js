@@ -27,6 +27,22 @@ function parse(){
           'n_color': 3
         }]
       });
+      createLineChart({
+        'ctx': document.getElementById("tamponi/nuovi_positivi").getContext('2d'),
+        'labels': label,
+        'data': [{
+          'title': 'Nuovi positivi',
+          'data': data.map(x => x.nuovi_positivi),
+          'n_color': 2
+        }, {
+          'title': 'Tamponi',
+          'data': datiCumulativi(data.map(x => x.tamponi)).map( x => {
+                                                              if(x < 0) return 0;
+                                                              else return x;
+                                }),
+          'n_color': 1
+        }]
+      });
   })
 }
 

@@ -1,27 +1,3 @@
-/*regioni = [
-  "abruzzo",
-  "basilicata",
-  "calabria",
-  "campania",
-  "emilia-romagna",
-  "friuli_venezia_giulia",
-  "lazio",
-  "liguria",
-  "lombardia",
-  "marche",
-  "molise",
-  "p.a._bolzano",
-  "p.a._trento",
-  "piemonte",
-  "puglia",
-  "sardegna",
-  "sicilia",
-  "toscana",
-  "umbria",
-  "valle_d'aosta",
-  "veneto"
-];*/
-
 let vue_app;
 
 var data; //il giorno di cui visualizzare i dati
@@ -35,7 +11,7 @@ function parse(){
     .done (function (data) {
 
       var giorno = data.filter( x => (moment(x.data).format('DD/MM/YYYY') == tmp_data ));
-      if (giorno.lenght == 0) {
+      if (giorno.length == 0) {
         swal("Ci scusiamo, ", "i dati del giorno richiesto non sono attualmente disponibili.", "warning");
         return;
       }
@@ -54,8 +30,8 @@ function parse(){
       });
 
       var nuovi_tamponi;
-      if (moment($('#datetimepicker').datetimepicker('date')).format('DD/MM/YYYY') != moment('24/02/2020').format('DD/MM/YYYY') ) { //non il primo giorno di controlli
-        var giorno_prima = data.filter( x => (moment(x.data).format('DD/MM/YYYY') == moment($('#datetimepicker').datetimepicker('date')).subtract(1, 'day').format('DD/MM/YYYY') ));
+      if (tmp_data != '24/02/2020') { //non il primo giorno di controlli
+        var giorno_prima = data.filter( x => ( moment(x.data).format('DD/MM/YYYY') ==  moment(tmp_data, 'DD/MM/YYYY').subtract(1, 'day').format('DD/MM/YYYY')));
         nuovi_tamponi = giorno.map( x => x.tamponi ).map( (x, i) => x - giorno_prima.map( x => x.tamponi )[i] );
       }
       else {

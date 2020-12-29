@@ -62,10 +62,10 @@ function createLineChart(obj) {
       label: d.title,
       data: d.data,
       backgroundColor: [
-        color[d.n_color],
+        color[d.n_color%color.length],
       ],
       borderColor: [
-        strong_color[d.n_color],
+        strong_color[d.n_color%strong_color.length],
       ],
       borderWidth: 2
   }));
@@ -118,3 +118,22 @@ function createBarChart(obj) {
   }
   });
 }
+
+function datiCumulativi(array) {
+  var output = [];
+  for(var i = 1; i < array.length; i++) {
+    output.push(array[i] - array[i-1]);
+  }
+  return output;
+}
+
+$(document).ready( function() {
+  $('#copy').click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(window.location.href).select();
+    document.execCommand("copy");
+    $temp.remove();
+    swal("Il link al sito è stato copiato.");
+  });
+});

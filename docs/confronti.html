@@ -7,6 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
@@ -21,6 +22,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- Tempus Dominus -->
     <script src="https://momentjs.com/downloads/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -31,6 +34,7 @@
     <script type="text/javascript" src="./confronti.js"> </script>
     <style>
       body { background-color: white; width: 100%; height: 100%; }
+      .container-fluid { padding: 3%; padding-top: 1%; }
       h1 { margin-top: 2%; margin-bottom: 2%; }
       .input-group-text { border-radius: 5%; }
       .form { border: 1px solid #dadada; padding: 5px; margin: 5px; }
@@ -59,7 +63,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <h1 id="titolo">Dati Covid-19</h1>
     </div>
@@ -194,7 +198,17 @@
     <div class="row">
       <button id="rigenera" type="button" class="btn btn-dark btn-lg btn-block">Rigenera il grafico</button>
     </div>
+   </div>
 
-    </div>
+    <footer class="text-white bg-dark text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Realizzato da <a class="text-white" title="Profilo GIT di Carolina Sgherri" href="https://github.com/Bess6598">Carolina Sgherri</a>
+        con i dati del <a class="text-white" title="Sito web protezione civile" href="http://www.protezionecivile.gov.it/">Dipartimento della protezione civile</a>
+        sotto licenza <a class="text-white" title="Pagina di riferimento per la licenza" href="https://creativecommons.org/licenses/by/4.0/legalcode.it">Creative commons.</a>
+        | <a class="text-white" title="Pagina facebook del Dipartimento della Protezione Civile" href="https://www.facebook.com/DPCgov/"><i class="fa fa-facebook"></i></a>
+          <a class="text-white" title="Repository GIT del Dipartimento della Protezione Civile con i dati" href="https://github.com/pcm-dpc/COVID-19"><i class="fa fa-github"></i></a>
+          <a id="copy" class="text-white" title="Copia link pagina"><i class="fa fa-share-alt"></i></a>
+      </div>
+    </footer>
   </body>
 </html>
