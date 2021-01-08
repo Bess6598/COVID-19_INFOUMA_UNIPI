@@ -5,6 +5,27 @@
 # Dati COVID-19 Italia
 
 ## Avvisi
+<b>07/01/2021</b><br>
+La Regione Friuli Venezia Giulia riporta che a seguito di ricalcolo, 396 casi già positivi a test antigenico, sono stati aggiunti al totale dei positivi da tampone molecolare.
+
+<b>06/01/2021</b><br>
+la Regione Abruzzo comunica che dal totale dei positivi è stato eliminato un caso in quanto duplicato. la Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 4 casi in quanto giudicati non casi COVID-19.
+
+<b>05/01/2021</b><br>
+La Regione Basilicata segnala che è in corso di verifica e validazione il numero totale dei guariti. La Regione Emilia  Romagna segnala che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 3 casi in quanto giudicati non casi COVID-19.
+
+<b>04/01/2021</b><br>
+La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>02/01/2021</b><br>
+La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 6 casi in quanto giudicati non casi COVID-19.
+
+<b>01/01/2021</b><br>
+La Regione Abruzzo comunica che dal totale dei casi positivi è stato eliminato un caso in quanto duplicato.
+
+<b>30/12/2020</b><br>
+La Regione Campania comunica di non avere a disposizione i dati quotidiani sugli ingressi in T.I..
+
 <b>29/12/2020</b><br>
 La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non caso COVID-19. La Regione Campania comunica di non avere a disposizione i dati quotidiani sugli ingressi in T.I.. La Regione Valle D'Aosta comunica che sulla base della nota di ieri ha riallineato i valori presenti nel report odierno. La Regione Veneto segnala che l'elevato numero di decessi è da imputare verosimilmente a ritardato inserimento nei giorni festivi.
 
