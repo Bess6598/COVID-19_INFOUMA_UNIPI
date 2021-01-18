@@ -5,6 +5,30 @@
 # Dati COVID-19 Italia
 
 ## Avvisi
+<b>17/01/2021</b><br>
+La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati è stato eliminato 1 caso in quanto giudicato non caso COVID-19. La Regione Molise comunica che gli 80 casi comunicati ieri come confermati da test antigenico erano anche positivi al test molecolare.
+
+<b>15/01/2021</b><br>
+A partire dalla data odierna la trasmissione dati rispetta quanto disposto dalla Circolare Aggiornamento della definizione di caso COVID-19 e strategie di testing N 0000705 del 08/01/2021. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>14/01/2021</b><br>
+La Regione Abruzzo comunica che è stato sottratto 1 caso dal Totale Positivi in seguito a controlli anagrafici sui nuovi positivi registrati ieri 13/01/2021. La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>13/01/2021</b><br>
+La Regione Basilicata comunica che per ricalcolo del totale casi positivi, è stato eliminato n. 1 caso positivo comunicato in data 11 c.m..
+
+<b>11/01/2021</b><br>
+La Regione Emilia Romagna comunica che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>10/01/2021</b><br>
+La Regione Emilia-Romagna segnala che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>09/01/2021</b><br>
+La Regione Basilicata segnala che il numero dei guariti è in corso di verifica.  La Regione Emilia Romagna segnala che in seguito a verifica sui dati comunicati nei giorni passati sono stati eliminati 2 casi in quanto giudicati non casi COVID-19.
+
+<b>08/01/2021</b><br>
+La Regione Abruzzo comunica che a seguito di controlli anagrafici, dal totale dei deceduti ne sono stati sottratti 5, e dai casi positivi ne sono stati sottratti 2, in quanto duplicati. La Regione Emilia Romagna comunica che in seguito a verifica sono stati eliminati 2 casi dai dati comunicati nei giorni passati in quanto giudicati non casi COVID-19.
+
 <b>07/01/2021</b><br>
 La Regione Friuli Venezia Giulia riporta che a seguito di ricalcolo, 396 casi già positivi a test antigenico, sono stati aggiunti al totale dei positivi da tampone molecolare.
 
