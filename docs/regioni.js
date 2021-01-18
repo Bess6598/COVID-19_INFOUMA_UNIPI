@@ -98,9 +98,9 @@ $(document).ready( function() {
   $('#datetimepicker').datetimepicker({
       inline: false,
       format: 'DD/MM/YYYY',
-      maxDate: moment().subtract(1, 'day'),
-      minDate: moment('24/02/2020', 'DD/MM/YYYY'),
-      default: moment().subtract(1, 'day'),
+      maxDate: moment().startOf('day'),
+      minDate: moment('24/02/2020', 'DD/MM/YYYY').startOf('day'),
+      default: moment().subtract(1, 'day').startOf('day'),
       date: data
   });
   parse();
